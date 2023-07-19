@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	background-color: #f0f1f2;
+}
+section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding: 20px;
+	min-height: 100vh;
+}
+.caixaRegistro{
+	position: relative;
+	width: 700px;
+	min-width: 100px;
+	border-radius: 15px;
+	background-color: #002478;
+	padding: 20px 30px;
+	
+	
+}
+.titulo{
+	display: flex;
+	justify-content: center;
+	font-size: 40px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+input:hover{
+	cursor: pointer;
+}
+select:hover{
+	cursor: pointer;
+}
+
+form{
+	padding: 10px;
+}
+input{
+	border: none;
+	font-size: 18px;
+}
+select{
+	border: none;
+	font-size: 18px;
+}
+span{
+	position: absolute;
+	right: 10%;
+	top: 54%;
+	transform: translate(0,-50%);
+	cursor: pointer;
+}
+i{
+	font-size: 25px;
+}
+
+.primeiraLinha{
+	width: 48%;
+	height: 50px;
+	text-align: center;
+}
+
+.tituloBaixo{
+	display: flex;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+}
+.cadastrado{
+	margin-left: 5px;
+	text-decoration: none;
+	color: #01778F;
+}
+input[type="submit"]{
+	margin-top: 10px;
+	width: 20%;
+	height: 50px;
+	border-radius: 4%;
+	background: #0070A8;
+	color: #fff;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	transition: 0.5s;
+}
+
+@media screen and (max-width: 720px){
+	.primeiraLinha:first-child{
+		margin-top: 0;
+		width: 100%;
+	}
+	.primeiraLinha:nth-child(2){
+		margin-top: 10px;
+		width: 100%;
+	}
+	span{	
+		right: 8%;
+		top: 58%;
+	}
+}
+@media screen and (max-width: 540px){
+	.titulo{
+		font-size: 30px;
+	}
+	span{
+		right: 11%;
+		top: 56%;
+	}
+}
+@media screen and (max-width: 424px){
+	.tituloBaixo{
+		font-size: 14px;
+	}
+	input[type="submit"]{
+		width: 30%;
+	}
+	span{	
+		right: 13%;
+		top: 57%;
+	}
+}
+@media screen and (max-width: 370px){
+	.titulo{
+		font-size: 25px;
+	}
+	.tituloBaixo{
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 323px){
+	.titulo{
+		font-size: 12px;
+	}
+	.tituloBaixo{
+		font-size: 9px;
+	}
+	input[type="submit"]{
+		width: 40%;
+	}
+	span{	
+		right: 15%;
+		top: 55%;
+	}
+}
